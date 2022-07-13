@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<!-- CSS part -->
+<style>
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+    .mainParagraph {
+      overflow-x: hidden; /* Disable horizontal scroll */
+      text-align: left;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+    /* The navigation links inside the overlay */
+      .mainParagraph a {
+      padding: 4px;
+      text-indent: 70px;
+      color: #000000;
+      transition: 0.3s; /* Transition effects on hover (color) */
+    }
+    /* When you mouse over the navigation links, change their color */
+    .mainParagraph a:hover, .mainParagraph a:focus {
+      color: #8400ff;
+    }
+    
+
+    /* The Overlay (background) */
+    .overlay {
+      height: 100%;
+      width: 0%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0, 0.87);
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+    
+    /* Position the content inside the overlay */
+    .overlay-content {
+      position: relative;
+      font-size: 15px;
+      top: 25%;
+      width: 100%;
+      text-align: left;
+      margin-top: 30px;
+      color:#f8f8f1;
+      margin: 15px;
+    }
+    
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+      color: #ffffff;
+    }
+    
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    }
+    </style>
+    <body>
+
+
+<!-- The overlay part -->
+<div id="myNav" class="overlay"> 
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- Button to close the overlay navigation -->
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a>this text means...</a>
+    </div>
+</div>
+  
+  
+<h1 style="font:50px;text-align: center;"><em> Searching for Explanations: How the Internet Inflates Estimates of Internal Knowledge </em></h1> 
+
+<div class="mainParagraph"><p><u>Introduction</u>
+    <br><br>
+    <a onclick="openNav()">
+    Just as a walking stick or a baseball glove can supplement the functioning of the body, cognitive tools, computational instruments, and external information sources can supplement the functioning of the mind. The mind can often increase efficiency and power by utilizing outside sources; for tasks like memory, it can rely on cognitive prostheses, such as a diary or a photo album. These external archives can become necessary components of an interdependent memory system (Harris, 1978). </a><br>
+    <a onclick="openNav()">
+    The mind can also become dependent on other minds. When others serve as externalized repositories of information, transactive memory systems can emerge (Wegner, 1987). In these systems, information is distributed across a group such that individuals are responsible for knowing a specified area of expertise. For instance, one person could be responsible for knowing where to find food while another knows how to prepare it. Members of the systems must also track where the rest of the knowledge is stored. Thus, these systems consist of two key elements: internal memory (“What do I know?”) and external memory (“Who knows what?”) (Hollingshead, 1998; 2001). By reducing redundancy, transactive memory systems work to encode, store, and retrieve information more effectively than could be done by any individual. </a><br>
+</div>
+
+<div class="wp-block-column">
+<p><u>Summary</u>
+    <br><br>
+    Here, contributors can post their overarching thoughts on the article and their main takeaways.<br></p>
+</div>
+
+<!-- Javascript Part -->
+<script>
+
+    /* Open when someone clicks on the span element */
+    function openNav() {
+      document.getElementById("myNav").style.width = "80%";
+    }
+    
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+
+</body>
+</html>
